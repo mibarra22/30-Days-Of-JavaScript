@@ -53,22 +53,63 @@
     </script>  
     <!--13)¿Qué es el carácter en el índice 15 en la cadena '30 días de JavaScript'? Utilice el método charAt() .-->
     <!--14)¿Cuál es el código de carácter de J en la cadena '30 días de JavaScript' usando charCodeAt()-->
+    <script>
+    console.log(desafio.charCodeAt('J'));
+    </script> 
     <!--15)Use indexOf para determinar la posición de la primera aparición de a en 30 días de JavaScript-->
+    <script>
+    console.log(desafio.indexOf('a'));
+    </script>
     <!--16)Utilice lastIndexOf para determinar la posición de la última aparición de a en 30 días de JavaScript.-->
+    <script>
+    console.log(desafio.lastIndexOf('a'));
+    </script>
     <!--17)Use indexOf para encontrar la posición de la primera aparición de la palabra porque en la siguiente oración: 'No
     puede terminar una oración con porque porque porque es una conjunción'-->
+    
+    <script>
+    console.log( 'No puede terminar una oración con porque porque porque es una conjunción'.indexOf('porque'));
+    </script>
     <!--18)Use lastIndexOf para encontrar la posición de la última aparición de la palabra porque en la siguiente oración:
     puede terminar una oración con porque porque porque es una conjunción'-->
+    <script>
+    console.log('No puede terminar una oración con porque porque porque es una conjunción'.lastIndexOf('porque'));
+    </script>
     <!--19)Use la búsqueda para encontrar la posición de la primera aparición de la palabra porque en la siguiente oración: 'No
     puede terminar una oración con porque porque porque es una conjunción'-->
+    <script>
+    console.log('No puede terminar una oración con porque porque porque es una conjunción'.search('porque'))
+
+    </script>
     <!--20)Use trim() para eliminar cualquier espacio en blanco final al principio y al final de una cadena. Por ejemplo, '30
     días de JavaScript'.-->
+    <script>
+        console.log(' 30 días de JavaScript '.trim())
+    </script>
     <!--21)Use el método beginWith() con la cadena 30 Days Of JavaScript y haga que el resultado sea verdadero-->
+    <script>
+    console.log(desafio.startsWith("30")); // sirve para que si la oracion comienza por algo
+    </script>
     <!--22)Use el método EndsWith() con la cadena 30 Days Of JavaScript y haga que el resultado sea verdadero-->
+    <script>
+    console.log(desafio.endsWith("ipt")); // igual que el anterior pero la parte final
+    </script>
     <!--23)Use el método match() para encontrar todas las a en 30 días de JavaScript-->
-    <!--24)Use concat() y combine '30 días de' y 'JavaScript' en una sola cadena, '30 días de JavaScript'-->
-    <!--25)Utilice el método repeat() para imprimir 30 días de JavaScript 2 veces-->
+    <script>
+    let patter = /a/gi;
 
+    console.log(desafio.match(patter))
+    </script>
+    <!--24)Use concat() y combine '30 días de' y 'JavaScript' en una sola cadena, '30 días de JavaScript'-->
+    <script>
+    let concatenar = ''
+    console.log(concatenar.concat('30 dias de ', 'Javascript'))
+    </script> 
+
+    <!--25)Utilice el método repeat() para imprimir 30 días de JavaScript 2 veces-->
+    <script>
+    console.log(desafio.repeat(2))
+    </script> 
 </body>
 
 </html>
